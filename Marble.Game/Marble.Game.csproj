@@ -10,11 +10,11 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="8.0.0" />
+    <PackageReference Include="OpenTK" Version="4.8.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="SDL2-CS\" />
   </ItemGroup>
 
 </Project>

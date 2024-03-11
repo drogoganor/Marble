@@ -12,7 +12,7 @@ namespace Marble.Game
             var builder = new ContainerBuilder();
 
             builder
-                .RegisterType<Sdl2WindowProvider>()
+                .RegisterType<WindowProvider>()
                 .AsSelf()
                 .AsImplementedInterfaces()
                 .SingleInstance();

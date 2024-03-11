@@ -16,7 +16,7 @@ catch (Exception ex)
 {
     //var log = container.Resolve<ILogger>();
     //log.Error(ex, "Error creating GameClient");
-    return;
+    throw;
 }
 
 client.Run();

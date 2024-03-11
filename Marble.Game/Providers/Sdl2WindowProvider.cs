@@ -9,10 +9,10 @@ namespace Marble.Game.Providers
 
         public Sdl2WindowProvider()
         {
-            // Initializes SDL.
+            // Initilizes SDL.
             if (SDL.SDL_Init(SDL.SDL_INIT_VIDEO) < 0)
             {
-                Console.WriteLine($"There was an issue initializing SDL. {SDL.SDL_GetError()}");
+                Console.WriteLine($"There was an issue initilizing SDL. {SDL.SDL_GetError()}");
             }
 
             // Create a new window given a title, size, and passes it a flag indicating it should be shown.

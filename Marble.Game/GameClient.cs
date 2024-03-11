@@ -1,5 +1,6 @@
 ﻿using Marble.Game.Providers;
 using SDL2;
+using static SDL2.SDL;
 
 namespace Marble.Game
 {
@@ -8,11 +9,13 @@ namespace Marble.Game
         private readonly Sdl2WindowProvider windowProvider;
         private bool running = true;
 
-        public GameClient(Sdl2WindowProvider windowProvider)
+        public GameClient(
+            Sdl2WindowProvider windowProvider)
         {
             this.windowProvider = windowProvider;
         }
 
+        // https://jsayers.dev/c-sharp-sdl-tutorial-part-1-setup/
         public void Run()
         {
             var renderer = windowProvider.Renderer;
